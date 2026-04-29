@@ -1,9 +1,9 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Slater Creek Outdoor Services | Professional Lawn Care in Anna, Texas</title>
+    <title>Slater Creek Lawn Services | Professional Lawn Care in Anna, Texas</title>
     <meta name="description" content="Professional lawn care services in Anna, Texas. Mowing, edging, trimming, and cleanup. Quality service you can trust.">
     <link rel="icon" type="image/png" href="assets/logo.png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -86,6 +86,7 @@
             font-size: 1.5rem;
             color: var(--dark-green);
             letter-spacing: 2px;
+            white-space: nowrap;
         }
 
         .nav-links {
@@ -149,7 +150,7 @@
         .hero {
             height: 100vh;
             background: linear-gradient(rgba(15, 45, 15, 0.5), rgba(15, 45, 15, 0.5)),
-                        url('https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=1600') center/cover no-repeat;
+                        url('https://images.unsplash.com/photo-1764969370921-7c8df49171cd?auto=format&fit=crop&w=1800&q=80') center/cover no-repeat;
             display: flex;
             align-items: center;
             justify-content: center;
@@ -331,7 +332,7 @@
             overflow: hidden;
             height: 400px;
             background: linear-gradient(rgba(26, 61, 26, 0.85), rgba(26, 61, 26, 0.85)),
-                        url('https://images.unsplash.com/photo-1589923188900-85dae523342b?w=800') center/cover no-repeat;
+                        url('https://images.unsplash.com/photo-1749592199769-ea94cef99d7f?auto=format&fit=crop&w=900&q=80') center/cover no-repeat;
             display: flex;
             align-items: center;
             justify-content: center;
@@ -426,7 +427,7 @@
 
         .pricing-cards {
             display: grid;
-            grid-template-columns: repeat(2, 1fr);
+            grid-template-columns: repeat(3, 1fr);
             gap: 2rem;
             margin-bottom: 3rem;
         }
@@ -495,7 +496,7 @@
         }
 
         .pricing-features li::before {
-            content: '✓ ';
+            content: '\2713';
             color: var(--accent-green);
             font-weight: 700;
             margin-right: 0.5rem;
@@ -823,6 +824,12 @@
             text-decoration: none;
         }
 
+        @media (max-width: 1024px) {
+            .pricing-cards {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
         /* Mobile Responsive */
         @media (max-width: 768px) {
             .hamburger {
@@ -840,6 +847,11 @@
                 box-shadow: 0 5px 10px rgba(0,0,0,0.1);
                 transition: right 0.3s;
                 align-items: flex-start;
+            }
+
+            .nav-logo-text {
+                font-size: 1.15rem;
+                letter-spacing: 1px;
             }
 
             .nav-right.active {
@@ -919,8 +931,8 @@
     <nav class="navbar">
         <div class="nav-container">
             <div class="nav-logo">
-                <img src="assets/logo.png" alt="Slater Creek Logo">
-                <span class="nav-logo-text">SLATER CREEK</span>
+                <img src="assets/logo.png" alt="Slater Creek Lawn Services Logo">
+                <span class="nav-logo-text">SLATER CREEK LAWN SERVICES</span>
             </div>
             <div class="nav-right" id="navRight">
                 <ul class="nav-links">
@@ -947,10 +959,10 @@
     <section class="hero">
         <div class="hero-content">
             <div class="hero-logo">
-                <img src="assets/logo.png" alt="Slater Creek Outdoor Services Logo">
+                <img src="assets/logo.png" alt="Slater Creek Lawn Services Logo">
             </div>
             <h1 class="hero-brand">SLATER CREEK</h1>
-            <div class="hero-subtitle">OUTDOOR SERVICES</div>
+            <div class="hero-subtitle">LAWN SERVICES</div>
             <p class="hero-tagline">Quality Service You Can Trust.</p>
             <div class="hero-buttons">
                 <a href="#pricing" class="btn btn-primary">Get a Free Quote</a>
@@ -992,17 +1004,17 @@
             <h2>Our Services</h2>
             <div class="services-grid">
                 <div class="service-card">
-                    <div class="service-icon"><i class="fas fa-seedling"></i></div>
+                    <div class="service-icon"><i class="fas fa-leaf"></i></div>
                     <h3>Mowing & Trimming</h3>
                     <p>Professional mowing with precision trimming around edges, trees, and landscaping features.</p>
                 </div>
                 <div class="service-card">
-                    <div class="service-icon"><i class="fas fa-cut"></i></div>
+                    <div class="service-icon"><i class="fas fa-wind"></i></div>
                     <h3>Edging & Blowing</h3>
                     <p>Sharp, clean edges along sidewalks and driveways, with thorough debris removal.</p>
                 </div>
                 <div class="service-card">
-                    <div class="service-icon"><i class="fas fa-certificate"></i></div>
+                    <div class="service-icon"><i class="fas fa-broom"></i></div>
                     <h3>Clean, Sharp & Professional</h3>
                     <p>Every job finished with attention to detail, leaving your lawn looking pristine.</p>
                 </div>
@@ -1016,38 +1028,53 @@
             <h2>Simple, Transparent Pricing</h2>
             <div class="pricing-cards">
                 <div class="pricing-card">
-                    <h3>Basic Lawn Care</h3>
-                    <div class="price">$35–$40</div>
-                    <div class="price-note">per visit</div>
+                    <h3>One-Time Lawn Care</h3>
+                    <div class="price">$35-$45</div>
+                    <div class="price-note">per visit, based on yard size</div>
                     <ul class="pricing-features">
+                        <li>Scheduled as needed</li>
                         <li>Mowing</li>
                         <li>Edging</li>
-                        <li>Trimming</li>
-                        <li>Cleanup</li>
+                        <li>Trimming and cleanup</li>
+                    </ul>
+                    <a href="#contact" class="btn btn-primary" style="width: 100%; text-align: center; display: inline-block;">Book Now</a>
+                </div>
+                <div class="pricing-card">
+                    <h3>Bi-Weekly Plan</h3>
+                    <div class="price">$30-$40</div>
+                    <div class="price-note">per visit, based on yard size</div>
+                    <ul class="pricing-features">
+                        <li>Scheduled every 2 weeks</li>
+                        <li>Priority booking</li>
+                        <li>Same reliable crew</li>
+                        <li>Discounted recurring rate</li>
                     </ul>
                     <a href="#contact" class="btn btn-primary" style="width: 100%; text-align: center; display: inline-block;">Book Now</a>
                 </div>
                 <div class="pricing-card">
                     <div class="best-value-badge">BEST VALUE</div>
-                    <h3>Bi-Weekly Plan</h3>
-                    <div class="price">$30–$35</div>
-                    <div class="price-note">per visit (discounted)</div>
+                    <h3>Weekly Plan</h3>
+                    <div class="price">$25-$35</div>
+                    <div class="price-note">per visit, based on yard size</div>
                     <ul class="pricing-features">
-                        <li>Scheduled every 2 weeks</li>
-                        <li>Priority booking</li>
-                        <li>Same reliable crew</li>
-                        <li>All Basic services included</li>
+                        <li>Scheduled every week</li>
+                        <li>Best per-visit rate</li>
+                        <li>Keeps growth manageable</li>
+                        <li>All lawn care services included</li>
                     </ul>
                     <a href="#contact" class="btn btn-primary" style="width: 100%; text-align: center; display: inline-block;">Book Now</a>
                 </div>
             </div>
             <div class="notice-box">
-                ⚠️ <strong>Cancellation Fee:</strong> A $15 cancellation fee applies to appointments cancelled with less than 24 hours notice.
+                <strong>Pricing note:</strong> Final pricing depends on yard size, lawn condition, and service needs. Recurring plans are discounted because regular maintenance keeps each visit faster and more predictable.
+            </div>
+            <div class="notice-box">
+                <strong>Scheduling Policy:</strong> Please give at least 24 hours notice for cancellations or rescheduling. A $15 late cancellation fee may apply.
             </div>
             <div class="addon-box">
                 <div class="addon-content">
                     <h4><i class="fas fa-paw"></i> Dog Waste Removal</h4>
-                    <p>Keep your lawn clean and safe for your family. Professional pet waste removal included with every visit.</p>
+                    <p>Keep your lawn clean and safe for your family. Professional pet waste removal is available with any visit.</p>
                 </div>
                 <div class="addon-pricing">
                     <div class="addon-price">+$10</div>
@@ -1117,13 +1144,13 @@
             </div>
             <div class="contact-form">
                 <div class="success-message" id="successMessage">
-                    ✓ Thank you! We'll be in touch soon.
+                    Thank you! We'll be in touch soon.
                 </div>
                 <form id="contactForm" action="https://api.web3forms.com/submit" method="POST">
                     <input type="hidden" name="access_key" value="18e5e260-3703-43dd-98ee-3607fb402f07">
-                    <input type="hidden" name="subject" value="New Slater Creek Outdoor Services Quote Request">
+                    <input type="hidden" name="subject" value="New Slater Creek Lawn Services Quote Request">
                     <input type="hidden" name="redirect" value="false">
-                    <input type="hidden" name="from_name" value="Slater Creek Website">
+                    <input type="hidden" name="from_name" value="Slater Creek Lawn Services Website">
 
                     <div class="form-group">
                         <label for="name">Name</label>
@@ -1145,10 +1172,12 @@
                         <label for="service">Service</label>
                         <select id="service" name="service" required>
                             <option value="">Select a service...</option>
-                            <option value="Basic Lawn Care ($35-$40)">Basic Lawn Care ($35-$40)</option>
-                            <option value="Bi-Weekly Plan ($30-$35)">Bi-Weekly Plan ($30-$35)</option>
-                            <option value="Basic + Dog Cleanup ($45-$50)">Basic + Dog Cleanup ($45-$50)</option>
-                            <option value="Bi-Weekly + Dog Cleanup ($40-$45)">Bi-Weekly + Dog Cleanup ($40-$45)</option>
+                            <option value="One-Time Lawn Care ($35-$45)">One-Time Lawn Care ($35-$45)</option>
+                            <option value="Bi-Weekly Plan ($30-$40)">Bi-Weekly Plan ($30-$40)</option>
+                            <option value="Weekly Plan ($25-$35)">Weekly Plan ($25-$35)</option>
+                            <option value="One-Time + Dog Waste Removal ($45-$55)">One-Time + Dog Waste Removal ($45-$55)</option>
+                            <option value="Bi-Weekly + Dog Waste Removal ($40-$50)">Bi-Weekly + Dog Waste Removal ($40-$50)</option>
+                            <option value="Weekly + Dog Waste Removal ($35-$45)">Weekly + Dog Waste Removal ($35-$45)</option>
                         </select>
                     </div>
                     <div class="form-group">
@@ -1168,8 +1197,8 @@
     <!-- Footer -->
     <footer class="footer">
         <div class="footer-content">
-            <div class="footer-logo">SLATER CREEK OUTDOOR SERVICES</div>
-            <div class="footer-tagline">A team you can trust — Ryker & Eli</div>
+            <div class="footer-logo">SLATER CREEK LAWN SERVICES</div>
+            <div class="footer-tagline">A team you can trust - Ryker & Eli</div>
             <div class="footer-phone">
                 <a href="tel:267-449-5490">267-449-5490</a>
             </div>
@@ -1215,7 +1244,7 @@
                 const data = await response.json();
 
                 if (data.success) {
-                    successMessage.textContent = '✓ Thank you! We\'ll contact you soon to discuss your lawn care needs.';
+                    successMessage.textContent = 'Thank you! We\'ll contact you soon to discuss your lawn care needs.';
                     successMessage.classList.add('show');
                     contactForm.reset();
 
@@ -1225,7 +1254,7 @@
                 } else {
                     successMessage.style.background = '#f8d7da';
                     successMessage.style.color = '#721c24';
-                    successMessage.textContent = '✗ Something went wrong. Please call us at 267-449-5490.';
+                    successMessage.textContent = 'Something went wrong. Please call us at 267-449-5490.';
                     successMessage.classList.add('show');
 
                     setTimeout(() => {
@@ -1237,7 +1266,7 @@
             } catch (error) {
                 successMessage.style.background = '#f8d7da';
                 successMessage.style.color = '#721c24';
-                successMessage.textContent = '✗ Connection error. Please call us at 267-449-5490.';
+                successMessage.textContent = 'Connection error. Please call us at 267-449-5490.';
                 successMessage.classList.add('show');
 
                 setTimeout(() => {

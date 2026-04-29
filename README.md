@@ -1,8 +1,8 @@
-# Slater Creek Outdoor Services Website
+﻿# Slater Creek Lawn Services Website
 
-Professional single-page website for Slater Creek Outdoor Services - serving Anna, Texas with reliable, high-quality lawn maintenance services.
+Professional single-page website for Slater Creek Lawn Services - serving Anna, Texas with reliable, high-quality lawn maintenance services.
 
-![Slater Creek Outdoor Services](assets/logo.png)
+![Slater Creek Lawn Services](assets/logo.png)
 
 ## Features
 
@@ -57,7 +57,7 @@ If you want to customize the map further (different zoom, style, etc.):
 1. Push this repository to GitHub (already done!)
 2. Go to [https://vercel.com](https://vercel.com)
 3. Click "New Project"
-4. Import your GitHub repository: `slater-creek-outdoor-services`
+4. Import your GitHub repository: `slatercreeklawncare`
 5. Vercel will auto-detect it as a static site
 6. Click "Deploy"
 7. Your site will be live at `https://your-project.vercel.app`
@@ -68,19 +68,20 @@ If you want to customize the map further (different zoom, style, etc.):
 
 ```
 website/
-├── assets/
-│   └── logo.png              # GreenEdge logo with transparency
-├── index.html                # Main website file (single-page)
-├── README.md                 # This file
-└── .claude/                  # Claude Code settings
+â”œâ”€â”€ assets/
+â”‚   â””â”€â”€ logo.png              # GreenEdge logo with transparency
+â”œâ”€â”€ index.html                # Main website file (single-page)
+â”œâ”€â”€ README.md                 # This file
+â””â”€â”€ .claude/                  # Claude Code settings
 ```
 
 ## Customization
 
 ### Update Pricing
 Find the pricing section around line 779-803 in `index.html`:
-- Basic Lawn Care: Currently `$35–$40`
-- Bi-Weekly Plan: Currently `$30–$35`
+- One-Time Lawn Care: Currently `$35-$45`
+- Bi-Weekly Plan: Currently `$30-$40`
+- Weekly Plan: Currently `$25-$35`
 
 ### Change Colors
 Color variables are defined in CSS (lines 19-27):
@@ -128,7 +129,7 @@ All content is in `index.html`. Sections are clearly labeled with comments:
 
 ## Contact
 
-**Slater Creek Outdoor Services**
+**Slater Creek Lawn Services**
 - Phone: [267-449-5490](tel:267-449-5490)
 - Location: Anna, Texas
 
